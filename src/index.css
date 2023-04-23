@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;600;700&display=swap');
+
+:root {
+  --bg-main: #131722;
+  --main-color: #fff;
+  --light-bg: #ff0707;
+  --font-family: 'Montserrat Alternates', sans-serif;
+  --shadow: rgba(145, 158, 171, .2) 0px 2px 4px -1px, rgba(145, 158, 171, .14) 0px 4px 5px 0px, rgba(145, 158, 171, .12) 0px 1px 10px 0px;
+}
+
+body {
+  background-color: var(--bg-main);
+  color: var(--main-color);
+  font-family: var(--font-family);
+}
+
+.brdr {
+  background-color: var(--light-bg);
+  height: 1px;
+
+}
+.all{
+  position: relative;
+  top: 90px;
+}
+.color{
+  color: var(--light-bg);
+}
+.background{
+  background-color: var(--bg-main);
+}
+.background2{
+  background-color: var(--light-bg);
+}
+.register , .login{
+  background-image: url(Assets/background.jpg);
+  background-position: center;
+  background-size: cover;
+}
+/* **************************************************************************************** Start navbar ************************************/
+nav {
+  color: var(--main-color) !important;
+  background-color: var(--bg-main);
+}
+
+.navbar-brand h3 {
+  font-weight: 600;
+  font-size: 30px;
+}
+.navbar-expand-md .navbar-nav .nav-link{
+  margin-right: 15px;
+}
+.header,.navbar-brand h3,.icon:hover {
+  color: var(--light-bg);
+}
+
+.parent {
+  box-shadow: var(--shadow);
+}
+
+.icon {
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.navbar-expand-md .navbar-nav .nav-link.active {
+  color: var(--light-bg);
+}
+
+.navbar-expand-md .navbar-nav .nav-link:hover {
+  color: var(--light-bg);
+}
+.form-control{
+  background: transparent;
+  color: var(--main-color);
+
+}
+.form-control:focus {
+  border-color: rgba(255, 7, 7, 0.4);
+  box-shadow: 0 0 0 0.25rem rgba(255, 7, 7, 0.4);
+  background: transparent;
+  color: var(--main-color);
+}
+
+.btn-bg {
+  background-color: var(--light-bg);
+  border: 2px solid var(--light-bg);
+  transition: all 0.5s;
+  font-weight: bold;
+  color: var(--main-color);
+}
+
+.btn-bg:hover {
+  background-color: transparent;
+  border-color: var(--light-bg);
+  color: var(--light-bg);
+}
+
+/* **************************************************************************************** Start Footrt ************************************/
+.footer {
+  background-color: var(--main-bg);
+}
+.footer .head a h3{
+  font-weight: 600;
+  font-size: 30px;
+  color: var(--light-bg);
+}
+.footer .categories {
+  display: flex;
+  flex-direction: column;
+
+}
+.footer .categories a {
+  margin-bottom: 15px;
+  text-decoration: none;
+  color: #aaa;
+  transition: all 0.5s;
+}
+.footer .categories a:hover {
+  color: var(--light-bg);
+}
+.social i {
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+/* **************************************************************************************** Start home ***************************************/
+.home h2{
+  line-height: 1.5;
+}
+.home h3 , .movies h3{
+  font-size: 14px;
+  font-weight: bold;
+}
+.vote{
+  background-color: var(--light-bg);
+  color: var(--main-color);
+}
+.welcome{
+  background-image: url(Assets/home.png);
+  background-position: center;
+  background-size: cover;
+  height: 500px;
+}
+.welcome h1{
+  font-size: 57px;
+  color: var(--light-bg);
+  font-weight: 600;
+}
+.welcome h2{
+  font-size: 45px;
+  font-weight: 900;
+}
+/* **************************************************************************************** Start movies ***************************************/
+.page-link:focus{
+  box-shadow: none;
+  color: var(--main-color);
+  background-color: transparent;
+}
+/* **************************************************************** Start loading **************************************************************/
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 65px;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: var(--bg-main);
+  z-index: 59864875;
+}
+
+.loader {
+  width: 60px;
+  height: 60px;
+  border: 2px solid #FFF;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+.loader::after {
+  content: '';  
+  box-sizing: border-box;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  background: var(--light-bg);
+  width: 4px;
+  height: 24px;
+  transform: translateX(-50%);
+}
+    
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+} 
