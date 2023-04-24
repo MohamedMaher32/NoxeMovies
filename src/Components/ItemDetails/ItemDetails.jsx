@@ -30,7 +30,7 @@ export default function ItemDetails() {
                             <div>
                                 <h2>{itemDetailes?.title} {itemDetailes?.name}</h2>
                                 <p className="text-muted my-3">{itemDetailes?.overview} {itemDetailes?.biography}</p>
-                                {itemDetailes.genres ? <h5 className="my-3">Type : <span className="small color">{itemDetailes.genres[0]?.name}</span>  <span className="small color">{itemDetailes.genres[1]?.name}</span>  <span className="small color">{itemDetailes.genres[2]?.name}</span></h5> : ""}
+                                {itemDetailes.genres ? <h5 className="my-3">genre : <span className="small color">{itemDetailes.genres[0]?.name}</span>  <span className="small color">{itemDetailes.genres[1]?.name}</span>  <span className="small color">{itemDetailes.genres[2]?.name}</span></h5> : ""}
                                 {itemDetailes.vote_average ? <h5 className="my-3">Vote Average : <span className="small color">{itemDetailes?.vote_average.toFixed(1)} / 10</span></h5> : ""}
                                 {itemDetailes.vote_count ? <h5 className="my-3">Vote Count : <span className="small color">{itemDetailes?.vote_count}</span> voter</h5> : ""}
                                 {itemDetailes.original_language ? <h5>Language : <span className="small color">{itemDetailes?.original_language}</span></h5> : ""}

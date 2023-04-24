@@ -152,6 +152,14 @@ nav {
   color: var(--light-bg);
   font-weight: 600;
 }
+@media screen and (max-width:499px) {
+  .welcome h1{
+    font-size: 41px !important;
+  }
+  .welcome h2{
+    font-size: 26px !important;
+  }
+}
 .welcome h2{
   font-size: 45px;
   font-weight: 900;

@@ -18,7 +18,7 @@ export default function Footer() {
         <div className="row py-5 text-center">
           <div className="col-lg-3 col-md-6 col-sm-12">
             <div >
-              <h5 className="text-white fw-bold">Linkes</h5>
+              <h5 className="text-white fw-bold">Links</h5>
               <div className="categories mt-4">
                 <Link to='/home'>Home</Link>
                 <Link to='/movies'>Movies</Link>
