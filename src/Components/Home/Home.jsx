@@ -28,7 +28,7 @@ export default function Home() {
         <div className='text-center'>
           <h1>Welcome To Noxe</h1>
           <h2 className='mb-5'>Unlimited movies, TV shows, and more.</h2>
-          <span className='p-4 background2 rounded-3 fw-bold'>Enjoy Watching</span>
+          <Link to='/movies' className='p-4 background2 rounded-3 fw-bold text-decoration-none text-white'>Enjoy Watching</Link>
         </div>
       </div>
       <div className="container mb-5 pb-5 all">

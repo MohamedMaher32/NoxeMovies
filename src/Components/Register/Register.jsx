@@ -52,7 +52,7 @@ export default function Register() {
   return (
     <div className="register pb-5">
       <div className="container my-5 pb-5 all">
-        <div className='w-75 mx-auto p-5 rounded-3 parent background'>
+        <div className='w-100 mx-auto p-5 rounded-3 parent background'>
           <h2 className='header text-center'>Register Now:</h2>
           <form onSubmit={formik.handleSubmit}>
             <div className='my-3'>
